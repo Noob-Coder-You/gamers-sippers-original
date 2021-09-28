@@ -1,0 +1,346 @@
+:root{
+    --font-Ubuntu: 'Ubuntu', sans-serif;
+    --clr-primary:#2a2af8;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body,html{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+
+}
+body{
+    background-image: url('/background-pattern.png');
+    background-color: skyblue;
+    font-family: var(--font-Ubuntu);
+}
+
+
+
+img{
+
+    width: 100%;
+}
+
+
+
+.logo{
+    height: 100px;
+    width: 100px;
+position: absolute;
+top: -5px;
+left: 45px;
+z-index: 1;
+
+
+    
+}
+/* nav social */
+
+.web-social{
+    color: var(--clr-primary);
+    font-size: 1.5rem;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+
+
+
+/* span */
+span{
+    color: var(--clr-primary);
+}
+
+
+
+
+
+
+header{
+    background: skyblue;
+    padding: 20px 0 10px;
+    border-bottom: 4px solid #5bc4ee;
+}
+
+h2,h3{
+    margin: 1rem 0;
+    font-size: 2.7rem;
+    color: var(--clr-primary);
+    text-align: center;
+    
+}
+
+/* navbar */
+  a{
+    text-decoration: none;
+    color: #fff;
+}
+
+nav li:hover{
+background-color:var(--clr-primary);
+
+
+}
+
+
+
+nav{
+text-align: center;
+background:skyblue ;
+font-family:var(--font-Ubuntu);
+color: #fff;
+
+}
+
+nav li{
+    list-style: none;
+    font-size: 2rem;
+    font-weight: 700;
+    padding:15px ;
+    color: #fff;
+    text-decoration: none;
+
+    
+}
+
+
+
+
+
+nav li + li{
+    margin-top: 10px;
+}
+
+.burger{
+    text-align: right;
+    font-size: 50px;
+    margin-right: 20px;
+    
+    color:#2a2af8;
+}
+
+.nav{
+    display: none;
+    
+
+}
+.toggle{
+    display: block;
+    animation: up .5s;
+    position: absolute;
+    width: 100%;
+
+
+}
+
+
+@keyframes up {
+    0%{
+        transform: translateX(200px);
+    }
+  
+    100%{
+        transform: translateX(0);
+    }
+}
+
+
+
+/* main */
+section{
+  max-width: 1100px;
+  width: 90%;
+  margin: 0 auto;
+
+}
+.main{
+    padding: 2rem 0;
+}
+
+
+.main-title{
+color: #fff;
+font-size: 3.7rem;
+
+}
+
+.one{
+    padding: 1rem 0 ;
+  text-align: center;
+}
+
+.one img{
+    aspect-ratio: 2/.8;
+}
+.btn{
+    display: inline-block;
+    font-size: 2rem;
+    color: #fff;
+    background: var(--clr-primary);
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin-top: 12px;
+
+
+}
+
+
+/* food service */
+
+.two{
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.two img{
+    aspect-ratio: 2.2/1;
+}
+
+.photos{
+    display: grid;
+     gap: 13px;
+    
+}
+.ratio img{
+    aspect-ratio: 16/14
+}
+
+
+
+.inside {
+    padding: 1rem 0;
+}
+
+/* about the owner */
+
+
+.about{
+    margin: 2rem 0;
+
+}
+
+.owner{
+    padding: 2.3rem 0;
+
+}
+
+.owner-name{
+font-size: 1.7rem;
+
+}
+
+
+
+.owner p{
+    font-size: 1.1rem;
+    color: #575555;
+    
+}
+
+
+
+
+
+
+
+.owner-social{
+    margin: 1rem 0;
+    display: flex;
+    gap: 20px;
+    font-size: 1.7rem;
+    color: var(--clr-primary);
+}
+
+
+/* fatehpur first */
+
+.about h3{
+    
+    margin-bottom: 14px;
+    
+
+
+}
+
+
+
+
+
+
+
+
+ @media (min-width:700px) {
+   
+
+.photos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 13px;
+
+}
+
+
+/* owner */
+.owner{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+.owner-pic{
+    width: 45%;
+}
+.about-owner{
+    width: 45%;
+}
+
+
+
+
+ }
+
+
+@media (min-width:900px){
+    #rate{
+        display: flex;
+        gap: 1rem;
+
+    }
+    .aboutinfo{
+        display: flex;
+        gap: 3rem;
+        align-items: center;
+    
+    }
+    
+    .abouttitle{
+        width: 35%;
+       
+        
+    }
+    .abouttitle h3{
+        font-size: 4rem;
+       
+    }
+
+    .intro{
+    width: 60%;
+    }
+
+}
+
+.copy{
+    padding: 10px 0 10px 0;
+    margin: 10px 0 0 30px;
+}
